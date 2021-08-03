@@ -9,6 +9,7 @@ class TreeNode:
         self.left_child: TreeNode = left  # 左子节点
         self.right_child: TreeNode = right  # 右子节点
         self.parent: TreeNode = parent  # 父节点
+        self.balance_factor = 0  # 平衡因子（左子树高度-右子树高度）
         self.__status = True  # 标记节点是否被删除
 
     def __iter__(self):
